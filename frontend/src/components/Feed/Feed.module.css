@@ -1,0 +1,80 @@
+.storyContainer{
+    padding: 10px 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.044);
+}
+
+.ProfileLink{
+    color: black;
+}
+
+.storyPic{
+    width: 3.2rem;
+    height: 3.2rem;
+    border: 2px solid white;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.storyImage{
+    background-image: linear-gradient(45deg,red,blue);
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    padding: 2px;
+}
+
+.storyTitle{
+    font-weight: 400;
+    font-size: 0.8rem;
+    width: 85%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+}
+
+.story{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.postContainer{
+    padding: 0px 0 20px 0;
+}
+
+.loading{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.loader{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    border-top: 3px solid black;
+    width: 5rem;
+    height: 5rem;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@media (max-width: 599px){
+    .postContainer{
+        padding-bottom: 110px;
+    }
+
+    .storyContainer{
+        padding: 9px 0;
+    }
+}

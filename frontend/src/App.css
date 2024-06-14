@@ -1,0 +1,33 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+}
+
+.padding{
+  padding-left: 200px;
+}
+
+.likeColor{
+  color: red;
+}
+
+.editMode{
+  border: 1px solid rgba(0, 0, 0, 0.466) !important;
+  outline: 0;
+}
+
+@media (max-width: 599px){
+  .padding{
+    padding-left: 0;
+  }
+}
+
+
+@media (min-width: 599px) and (max-width: 999px){
+  .padding{
+    padding-left: 100px;
+  }
+}

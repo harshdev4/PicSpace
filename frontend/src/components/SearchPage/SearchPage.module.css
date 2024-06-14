@@ -1,0 +1,67 @@
+.searchPage{
+    padding-top: 10px;
+}
+
+.searchBarContainer{
+    position: relative;
+    width: 500px;
+    margin: auto;
+}
+
+.searchInput{
+    width: 100%;
+    padding: 7px 7px 5px 35px;
+    font-size: 20px;
+}
+
+#searchIcon{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 18px;
+}
+
+.seachUserContainer{
+    border: 1px solid rgba(0, 0, 0, 0.315);
+    border-radius: 7px;
+    width: 500px;
+    margin: auto;
+}
+
+.profileLink{
+    text-decoration: none;
+    color: black;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 20px;
+    padding: 20px 20px 5px 20px;
+}
+
+.userPic{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.names{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.username{
+    font-size: 16px;
+}
+
+.fullname{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+@media (max-width: 599px){
+    .searchBarContainer, .seachUserContainer{
+        width: 98%;
+    }
+}
