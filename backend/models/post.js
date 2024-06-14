@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-mongoose.connect("mongodb+srv://upsign443:harshDev4@cluster0.7hwx8rs.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0/instagram");
+mongoose.connect("mongodb://127.0.0.1:27017/picSpace");
 
 const postSchema = new mongoose.Schema({
     username:{
