@@ -85,7 +85,7 @@ const Post = ({user_name})=>{
                 {
                     postArr.map((post, index)=>(
                         <div key={index} className={styles.post}>
-                            <Link to={`/post/${post._id}`} className='imageLink'><img src={`https://eef9cb3e-552a-43d8-982f-5db59136ad2c-00-2dnj7xzof14lt.sisko.replit.dev/api/getImages/${post.image}`} alt="postImage" className={styles.postImage} onMouseOver={showLike} onMouseLeave={hideLike}/></Link>
+                            <Link to={`/post/${post._id}`} className='imageLink'><img src={`http://localhost:3000/api/getImages/${post.image}`} alt="postImage" className={styles.postImage} onMouseOver={showLike} onMouseLeave={hideLike}/></Link>
                             <div className={styles.likeContainer} ref={likeContainer}><i className={`${styles.like} fa-solid fa-heart`}></i>  <span>{post.likes.length}</span> </div>
                         </div>
                     ))

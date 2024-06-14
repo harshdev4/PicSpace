@@ -96,7 +96,7 @@ const Profile = () => {
             <div className={styles.profileInfo}>
               <div className={styles.pic}>
                 <img
-                  src={`https://eef9cb3e-552a-43d8-982f-5db59136ad2c-00-2dnj7xzof14lt.sisko.replit.dev/api/getImages/${user.profilePic}`}
+                  src={`http://localhost:3000/api/getImages/${user.profilePic}`}
                   alt="profilePic"
                   className={styles.profilePic}
                   onError={(event) => {

@@ -6,7 +6,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'https://eef9cb3e-552a-43d8-982f-5db59136ad2c-00-2dnj7xzof14lt.sisko.replit.dev',
+        target: 'http://localhost:3000',
         secure: false, // Disable SSL certificate validation
         changeOrigin: true
       }

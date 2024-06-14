@@ -36,7 +36,7 @@ const SearchPage=()=>{
                 resultedUsers.map((user, index)=>(
                     <div key={index} className={styles.user}>
                         <Link to={`/profile/${user.username}`} className={styles.profileLink}>
-                        <img src={`https://eef9cb3e-552a-43d8-982f-5db59136ad2c-00-2dnj7xzof14lt.sisko.replit.dev/api/getImages/${user.profilePic}`} alt="userPic" className={styles.userPic} onError={(e)=> e.target.src = 'https://i0.wp.com/digitalhealthskills.com/wp-content/uploads/2022/11/3da39-no-user-image-icon-27.png?fit=500%2C500&ssl=1'}/>
+                        <img src={`http://localhost:3000/api/getImages/${user.profilePic}`} alt="userPic" className={styles.userPic} onError={(e)=> e.target.src = 'https://i0.wp.com/digitalhealthskills.com/wp-content/uploads/2022/11/3da39-no-user-image-icon-27.png?fit=500%2C500&ssl=1'}/>
                         <div className={styles.names}>
                             <h3 className={styles.username}>{user.username}</h3>
                             <h3 className={styles.fullname}>{user.fullname}</h3>
